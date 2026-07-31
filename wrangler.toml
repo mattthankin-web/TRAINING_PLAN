@@ -1,0 +1,8 @@
+name = "cycling-whatsapp-coach"
+main = "src/index.ts"
+compatibility_date = "2026-07-01"
+
+# Daily proactive check-in. This fires at 12:00 UTC — adjust to land at your
+# desired local morning time (remember UTC offset changes with daylight saving).
+[triggers]
+crons = ["0 12 * * *"]

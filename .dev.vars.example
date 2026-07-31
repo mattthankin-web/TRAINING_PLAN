@@ -1,0 +1,21 @@
+# Copy this file to .dev.vars for local `wrangler dev` testing.
+# In production, set each of these with `wrangler secret put <NAME>` instead —
+# never commit real values.
+
+TWILIO_ACCOUNT_SID=ACxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+TWILIO_AUTH_TOKEN=your_twilio_auth_token
+# The WhatsApp-enabled number Twilio gave you, in "whatsapp:+1..." form.
+TWILIO_WHATSAPP_FROM=whatsapp:+14155238886
+# Your own WhatsApp number, in "whatsapp:+1..." form. The bot only ever
+# talks to this number.
+MY_WHATSAPP_NUMBER=whatsapp:+1XXXXXXXXXX
+# Content SID of the approved WhatsApp template used for the daily proactive
+# message (see README "WhatsApp template" section).
+TWILIO_DAILY_TEMPLATE_SID=HXxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+INTERVALS_API_KEY=your_intervals_icu_api_key
+# Your intervals.icu athlete id, e.g. i123456 (found in the URL when logged in).
+INTERVALS_ATHLETE_ID=i123456
+
+ANTHROPIC_API_KEY=sk-ant-xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ANTHROPIC_MODEL=claude-sonnet-5
