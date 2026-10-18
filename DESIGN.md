@@ -5,7 +5,7 @@ A personal, single-athlete coaching system that replicates RestOrTrain
 workout delivery to Zwift/Garmin, ride analysis) and adds Oura recovery data,
 Melbourne route knowledge, and a full training + health dashboard.
 
-Status: **design agreed in principle, not yet built.**
+Status: **phase 1 (data foundation) built; phases 2+ to come.**
 
 ## Decisions so far
 
@@ -17,6 +17,11 @@ Status: **design agreed in principle, not yet built.**
 | Planning | Full plan to a target event, plus ad-hoc adjustments from chat |
 | Hosting | This repo; separate Fly.io app and Supabase project from HOME_ASSIST |
 | Tone | Coach should actively keep the athlete motivated |
+| Target event | Great Ocean & Otway Classic Ride, 145 km / 1,426 m, goal sub-6 h (date TBC, expected April 2027) |
+| Availability | Mon/Tue/Wed indoor; one of Sat/Sun long outdoor ride |
+| Home base | Collingwood, VIC (route start point) |
+| Routes | Strava |
+| Notifications | ntfy |
 
 ## Goals
 
@@ -183,7 +188,7 @@ Web app served by the same backend, single-user login, phone-friendly.
 ## Proactive messages
 
 Claude chat can't initiate, so scheduled messages go via push notification
-(ntfy or Pushover) with a link to the dashboard / a chat prompt:
+(ntfy) with a link to the dashboard / a chat prompt:
 - ~06:30 after Oura sync: verdict + today's session
 - After each ride syncs: short analysis, PBs, one question
 - Sunday evening: weekly review + next week's sessions pushed to Zwift/Garmin
@@ -224,8 +229,5 @@ two hard days in a row without confirmation; all writes logged.
 
 ## Open questions
 
-- Target event: name, date, distance, elevation, goal
-- Weekly availability: which days, how long, indoor vs outdoor
-- Usual start point in Melbourne (suburb) for route suggestions
-- Strava / RideWithGPS in use?
-- Push notification preference (ntfy, Pushover, email)
+- Confirm the event date (past editions ran in April)
+- Session length available on Mon/Tue/Wed, and max long-ride duration
