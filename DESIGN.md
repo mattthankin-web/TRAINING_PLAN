@@ -99,6 +99,14 @@ values are kept as a cross-check, never mixed into one baseline.
 - `checkins` — RPE, soreness, stress, motivation, notes
 - `achievements` — PBs, streaks, milestones (feeds motivation)
 
+## Coaching guidance
+
+Training principles live in [`guidance/`](guidance/README.md), one Markdown
+file per source, with the claim, how it applies to this plan, and its limits.
+The coach reads active guidance when building and adjusting plans, and
+resolves conflicts in a fixed order: safety/readiness → event demands →
+athlete preferences → general guidance.
+
 ## Readiness engine
 
 Explicit, tunable rules; Claude explains them rather than inventing a score.
